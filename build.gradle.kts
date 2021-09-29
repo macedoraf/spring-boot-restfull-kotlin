@@ -23,13 +23,14 @@ repositories {
 
 dependencies {
 	// https://mvnrepository.com/artifact/com.h2database/h2
-	implementation("org.postgresql:postgresql:42.2.23")
+	implementation("org.postgresql:postgresql:42.2.23.jre7")
 	implementation("org.mariadb.jdbc:mariadb-java-client:2.7.3")
 	implementation("com.h2database:h2:1.4.200")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	implementation("org.springframework.boot:spring-boot-starter-mustache")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.okta.spring:okta-spring-boot-starter:1.4.0")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.5.4")
+	implementation("org.springframework.boot:spring-boot-starter-mustache:2.5.4")
+	implementation("org.springframework.boot:spring-boot-starter-web:2.5.4")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.5")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
