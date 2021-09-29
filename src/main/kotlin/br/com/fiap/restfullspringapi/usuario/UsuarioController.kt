@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("usuario")
 class UsuarioController(
-    override val service: BaseService<Meta>
-) : BaseController<Meta>() {
+    override val service: BaseService<Usuario>
+) : BaseController<Usuario>() {
 
 }

@@ -1,5 +1,6 @@
 package br.com.fiap.restfullspringapi.meta
 
+import br.com.fiap.restfullspringapi.funcionario.Funcionario
 import javax.persistence.*
 
 @Entity
@@ -7,7 +8,8 @@ import javax.persistence.*
 data class Meta(
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE) val id: Long,
     val description: String,
-    val data: String
+    val data: String,
+    @ManyToOne(fetch = FetchType.LAZY) val funcionario: Funcionario?
 ) {
-    constructor() : this(0, "", "")
+    constructor() : this(0, "", "", null)
 }

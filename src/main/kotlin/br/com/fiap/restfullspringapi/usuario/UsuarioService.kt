@@ -6,4 +6,4 @@ import br.com.fiap.restfullspringapi.meta.MetaRepository
 import org.springframework.stereotype.Service
 
 @Service
-class UsuarioService(override val repository: MetaRepository) : BaseService<Meta>()
+class UsuarioService(override val repository: UsuarioRepository) : BaseService<Usuario>()

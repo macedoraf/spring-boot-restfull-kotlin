@@ -9,8 +9,7 @@ data class Usuario(
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE) val id: Long,
     val name: String,
     val lastName: String,
-    val password: String,
-    @OneToMany(mappedBy = "metas") val metas: List<Meta>
+    val password: String
 ) {
-    constructor() : this(0, "", "", "", listOf())
+    constructor() : this(0, "", "", "")
 }

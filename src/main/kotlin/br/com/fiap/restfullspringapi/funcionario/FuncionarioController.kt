@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("funcionario")
 class FuncionarioController(
-    override val service: BaseService<Meta>
-) : BaseController<Meta>() {
+    override val service: BaseService<Funcionario>
+) : BaseController<Funcionario>() {
 
 }
