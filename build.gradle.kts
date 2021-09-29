@@ -23,6 +23,7 @@ repositories {
 
 dependencies {
 	// https://mvnrepository.com/artifact/com.h2database/h2
+	implementation("org.mariadb.jdbc:mariadb-java-client:2.7.3")
 	implementation("com.h2database:h2:1.4.200")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-mustache")
